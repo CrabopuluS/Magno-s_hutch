@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magno's hutch — Dashboard</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Magno’s hutch — Telemetry Dashboard</h1>
+  </header>
+
+  <div class="toolbar container">
+    <label for="apiBase">API base:</label>
+    <input id="apiBase" type="text" placeholder="http://localhost:8000" />
+    <button id="saveApi">Save</button>
+
+    <label for="from">From:</label>
+    <input id="from" type="date" />
+    <label for="to">To:</label>
+    <input id="to" type="date" />
+    <button id="reload">Reload</button>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <canvas id="dailyChart" width="800" height="300"></canvas>
+    </div>
+    <div class="card">
+      <canvas id="histChart" width="800" height="300"></canvas>
+    </div>
+  </div>
+
+  <script type="module" src="./dashboard.js"></script>
+</body>
+</html>

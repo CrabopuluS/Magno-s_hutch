@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite
+.venv/
+.env
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node / front cache
+node_modules/
+dist/
